@@ -1,15 +1,15 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
-import Home from "./Components/home/Home";
-import Navbar from "./Components/global/Navbar";
-import ItemDetails from "./Components/itemDetails/ItemDetails";
-import CartMenu from "./Components/global/CartMenu";
-import Checkout from "./Components/checkout/Checkout";
-import Confirmation from "./Components/checkout/Confirmation";
-import Footer from "./Components/global/Footer";
-import About from "./Components/about/About";
-import Stockists from "./Components/stockists/Stockists";
-import Cancel from "./Components/checkout/Cancel";
+import Home from "./components/home/Home";
+import Navbar from "./components/global/Navbar";
+import ItemDetails from "./components/itemDetails/ItemDetails";
+import CartMenu from "./components/global/CartMenu";
+import Checkout from "./components/checkout/Checkout";
+import Confirmation from "./components/checkout/Confirmation";
+import Footer from "./components/global/Footer";
+import About from "./components/about/About";
+import Stockists from "./components/stockists/Stockists";
+import Cancel from "./components/checkout/Cancel";
 import React from "react";
 
 const ScrollToTop = () => {

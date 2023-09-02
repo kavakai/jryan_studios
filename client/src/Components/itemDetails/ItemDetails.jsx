@@ -7,7 +7,7 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import { shades } from "../../theme";
 import { addToCart } from "../state/state";
 import { useParams } from "react-router-dom";
-import Item from '../../components/Item';
+import Item from '../Item';
 
 function ItemDetails() {
   const dispatch = useDispatch();
