@@ -1,5 +1,5 @@
 'use strict';
-const stripe = require('stripe')(process.env.STRIPE_KEY);
+const stripe = require('stripe')(process.env.STRIPE_TEST_KEY);
 console.log(stripe, 'stripe in controller')
 
 /**
