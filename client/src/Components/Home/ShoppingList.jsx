@@ -20,7 +20,7 @@ const ShoppingList = () => {
 
   async function getItems() {
     const items = await fetch(
-      "https://classic-novelty-bafec44cf4.strapiapp.com/api/items?sort[0]=category&sort[1]=name&populate=deep",
+      "http://localhost:1337/api/items?sort[0]=category&sort[1]=name&populate=deep",
       { method: "GET" }
     );
     const itemsJson = await items.json();
@@ -83,27 +83,27 @@ const ShoppingList = () => {
       >
         {value === "all" &&
           items.map((item) => (
-            <Item item={item} key={`${item.name}-${item.id}`} />
+            <Item item={item} key={`${item.name}-${item.id}`} width={undefined} />
           ))}
         {value === "feathers" &&
           feathersItems.map((item) => (
-            <Item item={item} key={`${item.name}-${item.id}`} />
+            <Item item={item} key={`${item.name}-${item.id}`} width={undefined} />
           ))}
         {value === "windowVases" &&
           windowVasesItems.map((item) => (
-            <Item item={item} key={`${item.name}-${item.id}`} />
+            <Item item={item} key={`${item.name}-${item.id}`} width={undefined} />
           ))}
         {value === "windowPanels" &&
           windowPanelsItems.map((item) => (
-            <Item item={item} key={`${item.name}-${item.id}`} />
+            <Item item={item} key={`${item.name}-${item.id}`} width={undefined} />
           ))}
         {value === "lightCatchers" &&
           lightCatchersItems.map((item) => (
-            <Item item={item} key={`${item.name}-${item.id}`} />
+            <Item item={item} key={`${item.name}-${item.id}`} width={undefined} />
           ))}
         {value === "placesOfInspiration" &&
           placesOfInspirationItems.map((item) => (
-            <Item item={item} key={`${item.name}-${item.id}`} />
+            <Item item={item} key={`${item.name}-${item.id}`} width={undefined} />
           ))}
       </Box>
     </Box>

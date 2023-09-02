@@ -35,7 +35,7 @@ function Footer() {
             sx={{ cursor: 'pointer' }} 
             fontSize={isNonMobile ? 'undefined' : '12px'}
           >
-            <a style={{ 'text-decoration': 'none', 'color': 'inherit' }} href='#top'>J Ryan Studios</a>
+            <a style={{ 'textDecoration': 'none', 'color': 'inherit' }} href='#top'>J Ryan Studios</a>
           </Typography>
           <Typography>All Items Handmade in Santa Fe, NM</Typography>
         </Box>
@@ -59,13 +59,13 @@ function Footer() {
           {/* <Typography variant='h4' mb='30px'>Contact Me</Typography> */}
           <Typography mb={isNonMobile ? '30px' : '10px'} fontSize={isNonMobile ? 'undefined' : '10px'}>Email: jryanreeves@gmail.com</Typography>
           <Typography mb={isNonMobile ? '30px' : '10px'} fontSize={isNonMobile ? 'undefined' : '10px'}>
-            <a style={{ 'text-decoration': 'none', 'color': 'inherit' }} href='https://www.instagram.com/jryanreeves/?hl=en' rel='noreferrer' target='_blank'>@jryanreeves</a>
+            <a style={{ 'textDecoration': 'none', 'color': 'inherit' }} href='https://www.instagram.com/jryanreeves/?hl=en' rel='noreferrer' target='_blank'>@jryanreeves</a>
           </Typography>
           <Typography
             fontSize={isNonMobile ? 'undefined' : '10px'}
             variant='h4'   
             color={shades.primary[200]}>
-              <a style={{ 'text-decoration': 'none', 'color': 'inherit' }} href='https://www.kai-the-dev.com/' rel='noreferrer' target='_blank'>Website created by: Kai</a>
+              <a style={{ 'textDecoration': 'none', 'color': 'inherit' }} href='https://www.kai-the-dev.com/' rel='noreferrer' target='_blank'>Website created by: Kai</a>
           </Typography>
         </Box>
       </Box>
