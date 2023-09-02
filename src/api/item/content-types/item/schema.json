@@ -1,10 +1,11 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "items",
   "info": {
     "singularName": "item",
     "pluralName": "items",
-    "displayName": "Item"
+    "displayName": "Item",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -41,24 +42,43 @@
       ]
     },
     "thumbnails": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
+      ]
+    },
+    "colorChoices": {
+      "type": "customField",
+      "options": [
+        "Red",
+        "Orange",
+        "Yellow",
+        "Green",
+        "Blue",
+        "Purple",
+        "Neutral",
+        "Warm",
+        "Cool",
+        "Bright",
+        "Soft"
       ],
-      "type": "media",
-      "multiple": false
+      "customField": "plugin::multi-select.multi-select"
     }
   }
 }
