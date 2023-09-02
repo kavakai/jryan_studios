@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "hero_banners",
+  "collectionName": "stockists",
   "info": {
-    "singularName": "hero-banner",
-    "pluralName": "hero-banners",
-    "displayName": "HeroBanner",
+    "singularName": "stockist",
+    "pluralName": "stockists",
+    "displayName": "Stockist",
     "description": ""
   },
   "options": {
@@ -12,7 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "image": {
+    "storeName": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "storeLogo": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -23,7 +29,7 @@
         "audios"
       ]
     },
-    "title": {
+    "link": {
       "type": "string"
     }
   }
