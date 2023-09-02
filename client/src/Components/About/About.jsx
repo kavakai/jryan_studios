@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import image from '../../Profile_Pic/IMG_0451.jpg'
+import image from '../../Profile_Pic/IMG_0451.jpg';
 
 function About() {
   return (

@@ -6,8 +6,8 @@ import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { shades } from '../../theme';
 import { useDispatch, useSelector } from 'react-redux';
-import { setHeroBanner } from "../../scenes/state";
-import HeroBannerImage from '../../components/HeroBannerImage';
+import { setHeroBanner } from "../state/state";
+import HeroBannerImage from '../HeroBannerImage';
 
 function MainCarousel() {
   const isNonMobile = useMediaQuery('(min-width: 600px)');
