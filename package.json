@@ -13,6 +13,7 @@
     "@strapi/design-system": "^1.9.0",
     "@strapi/plugin-content-type-builder": "^4.13.1",
     "@strapi/plugin-i18n": "4.13.1",
+    "@strapi/plugin-upload": "^4.13.1",
     "@strapi/plugin-users-permissions": "4.13.1",
     "@strapi/strapi": "4.13.1",
     "better-sqlite3": "8.5.0",
