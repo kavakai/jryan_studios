@@ -3,7 +3,6 @@ import { Box } from "@mui/material";
 
 function HeroBannerImage({ item }) {
   const { title, image } = item.attributes;
-  console.log(item, 'item')
   const {
     data: {
       attributes: { url }
