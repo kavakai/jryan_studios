@@ -16,6 +16,7 @@
     "@strapi/plugin-users-permissions": "4.13.1",
     "@strapi/strapi": "4.13.1",
     "better-sqlite3": "8.5.0",
+    "strapi-plugin-multi-select": "^1.2.2",
     "stripe": "^12.18.0"
   },
   "author": {
