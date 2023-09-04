@@ -9,7 +9,7 @@ import Confirmation from "./components/checkout/Confirmation";
 import Footer from "./components/global/Footer";
 import About from "./components/about/About";
 import Stockists from "./components/stockists/Stockists";
-import Cancel from "./components/checkout/Cancel";
+import Cancel from "./components/checkout/Cancel"
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
