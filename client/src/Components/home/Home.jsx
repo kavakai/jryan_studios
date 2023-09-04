@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import MainCarousel from './MainCarousel';
 import ShoppingList from './ShoppingList';
 import Subscribe from './Subscribe';
@@ -9,7 +9,7 @@ function Home() {
       <MainCarousel />
       <ShoppingList />
       {/* <Subscribe /> */}
-    </div>
+  </div>
   )
 }
 
