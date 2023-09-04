@@ -24,7 +24,7 @@ function ItemDetails() {
   
   async function getItem() {
     const item = await fetch(
-      `http://localhost:1337/api/items/${itemId}?populate=deep`,
+      `https://smiling-joy-b1e870043b.strapiapp.com/api/items/${itemId}?populate=deep`,
       { method: 'GET' }
     );
     const itemJson = await item.json();
@@ -37,7 +37,7 @@ function ItemDetails() {
 
   async function getItems() {
     const items = await fetch(
-      "http://localhost:1337/api/items?populate=deep",
+      "https://smiling-joy-b1e870043b.strapiapp.com/api/items?populate=deep",
       { method: "GET" }
     );
     const itemsJson = await items.json();
