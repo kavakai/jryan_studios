@@ -7,7 +7,7 @@ import { CssBaseline } from '@mui/material';
 import { theme } from './theme';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
-import cartReducer from './components/state/cartSlice';
+import { cartReducer } from './components/state';
 
 const store = configureStore({
   reducer: { cart: cartReducer },
