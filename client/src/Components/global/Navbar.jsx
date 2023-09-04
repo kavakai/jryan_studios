@@ -4,7 +4,7 @@ import { Badge, Box, IconButton, useTheme, Typography } from '@mui/material';
 import { PersonOutline, ShoppingBagOutlined, MenuOutlined, SearchOutlined } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import { shades } from '../../theme'; 
-import { setIsCartOpen } from '../state_2/state';
+import { setIsCartOpen } from '../state';
 import useMediaQuery from '@mui/material/useMediaQuery';
 
 
