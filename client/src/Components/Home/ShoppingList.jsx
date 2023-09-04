@@ -6,7 +6,7 @@ import Item from "../Item";
 import { Typography } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useDispatch, useSelector } from "react-redux";
-import { setItems } from "../state/state";
+import { setItems } from "../state_2/state";
 
 const ShoppingList = () => {
   const dispatch = useDispatch();

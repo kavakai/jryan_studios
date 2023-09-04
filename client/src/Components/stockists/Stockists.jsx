@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 import Stockist from './Stockist';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setStockists } from "../state/state";
+import { setStockists } from "../state_2/state";
 
 
 function Stockists() {
