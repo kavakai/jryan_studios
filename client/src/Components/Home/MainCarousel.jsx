@@ -16,7 +16,7 @@ function MainCarousel() {
 
   async function getHeroBanner() {
     const banner = await fetch(
-      "http://localhost:1337/api/hero-banners?populate=deep",
+      "https://smiling-joy-b1e870043b.strapiapp.com/api/hero-banners?populate=deep",
       { method: "GET" }
     );
     const data = await banner.json();
