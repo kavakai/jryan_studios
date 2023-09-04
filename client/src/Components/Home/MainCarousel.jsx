@@ -6,7 +6,7 @@ import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { shades } from '../../theme';
 import { useDispatch, useSelector } from 'react-redux';
-import { setHeroBanner } from "../state_2/state";
+import { setHeroBanner } from "../state";
 import HeroBannerImage from '../HeroBannerImage';
 
 function MainCarousel() {
