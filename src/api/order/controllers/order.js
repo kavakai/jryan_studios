@@ -39,6 +39,7 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
         success_url: "http://localhost:3000/checkout/success",
         cancel_url: "http://localhost:3000/checkout/cancel",
         line_items: lineItems,
+        shipping_address_collection: { allowed_countries: ["US", "CA"] },
         shipping_options: [
                     {
                       shipping_rate_data: {
