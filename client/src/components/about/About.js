@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import image from '../../profile_pic/IMG_0451.jpg';
+import profile_pic from '../../profile_pic';
 
 function About() {
   return (
@@ -8,10 +8,10 @@ function About() {
       <Box display="flex" flexWrap="wrap" columnGap="40px">
         <Box flex="1 1 40%" mb="40px">
           <img
-            alt={image.name}
+            alt={profile_pic.name}
             width="100%"
             height="100%"
-            src={image}
+            src={profile_pic}
             style={{ objectFit: "contain", boxShadow: '5px 5px 5px #c5c2c2' }}
           />
         </Box>
