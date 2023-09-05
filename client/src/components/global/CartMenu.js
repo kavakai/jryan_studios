@@ -20,6 +20,7 @@ function CartMenu() {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart.cart);
   const isCartOpen = useSelector((state) => state.cart.isCartOpen);
+  console.log('cart', cart)
 
   const totalPrice = cart.reduce((total, item) => {
     return total + item.count * item.attributes.price;
