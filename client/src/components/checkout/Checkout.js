@@ -50,7 +50,7 @@ const Checkout = () => {
       method: "POST",
       headers: { 
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.REACT_APP_STRAPI_JWT}`},
+        Authorization: `Bearer ${process.env.REACT_APP_STRAPI_JWT}`,
       },
       body: JSON.stringify(requestBody),
     });
