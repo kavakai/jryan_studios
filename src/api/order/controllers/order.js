@@ -70,7 +70,7 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
         .create({ data: { userName, products, stripeSessionId: session.id } });
 
       // return the session id
-      response.redirect(303, session.url);
+      session.redirectToCheckout({ sessionId: session.id });
       return { id: session.id };
     } catch (error) {
       ctx.response.status = 500;
