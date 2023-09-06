@@ -48,7 +48,10 @@ const Checkout = () => {
 
     const response = await fetch("https://smiling-joy-b1e870043b.strapiapp.com/api/orders", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { 
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.REACT_APP_STRAPI_JWT}`},
+      },
       body: JSON.stringify(requestBody),
     });
     const session = await response.json();
