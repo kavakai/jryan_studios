@@ -36,7 +36,6 @@ const Checkout = () => {
     );
 
   async function makePayment(values) {
-    const stripe = await stripePromise;
     const requestBody = {
       userName: [values.firstName, values.lastName].join(" "),
       email: values.email,
@@ -45,7 +44,8 @@ const Checkout = () => {
         count,
       })),
     };
-
+    
+    const stripe = await stripePromise;
     const response = await fetch("https://smiling-joy-b1e870043b.strapiapp.com/api/orders", {
       method: "POST",
       headers: { 
