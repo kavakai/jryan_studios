@@ -10,6 +10,7 @@ const { createCoreController } = require("@strapi/strapi").factories;
 module.exports = createCoreController("api::order.order", ({ strapi }) => ({
   async create(ctx) {
     const { products, userName, email } = ctx.request.body;
+    console.log(ctx.request.body, 'ctx.request.body')
     try {
       // retrieve item information
       const lineItems = await Promise.all(
@@ -70,8 +71,7 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
         .create({ data: { userName, products, stripeSessionId: session.id } });
 
       // return the session id
-      session.redirectToCheckout({ sessionId: session.id });
-      return { id: session.id };
+      return { id: session.id }
     } catch (error) {
       ctx.response.status = 500;
       return error;

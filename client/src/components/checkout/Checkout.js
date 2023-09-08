@@ -36,6 +36,8 @@ const Checkout = () => {
     );
 
   async function makePayment(values) {
+    const stripe = await stripePromise;
+    
     const requestBody = {
       userName: [values.firstName, values.lastName].join(" "),
       email: values.email,
@@ -45,18 +47,20 @@ const Checkout = () => {
       })),
     };
     
-    const stripe = await stripePromise;
     const response = await fetch("https://smiling-joy-b1e870043b.strapiapp.com/api/orders", {
       method: "POST",
       headers: { 
         "Content-Type": "application/json",
-        // Authorization: `Bearer ${process.env.STRAPI_ADMIN_STRIPE_KEY}`,
+        // Authentication: `Bearer ${process.env.API_TOKEN_SALT}`,
       },
       body: JSON.stringify(requestBody),
     });
+    
     const session = await response.json();
+
     console.log(session, 'session')
-    console.log(stripe, 'stripe')
+    console.log(stripePromise, 'promise')
+    console.log(response, 'response')
     await stripe.redirectToCheckout({
       sessionId: session.id,
     });
