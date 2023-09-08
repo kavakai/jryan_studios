@@ -49,10 +49,7 @@ const Checkout = () => {
     
     const response = await fetch("https://smiling-joy-b1e870043b.strapiapp.com/api/orders", {
       method: "POST",
-      headers: { 
-        "Content-Type": "application/json",
-        // Authentication: `Bearer ${process.env.API_TOKEN_SALT}`,
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(requestBody),
     });
     
@@ -61,9 +58,6 @@ const Checkout = () => {
     await stripe.redirectToCheckout({
       sessionId: session.id,
     });
-    console.log(session, 'session')
-    console.log(stripe, 'stripe')
-    console.log(response, 'response')
   }
 
   return (

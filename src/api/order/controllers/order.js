@@ -10,7 +10,6 @@ const { createCoreController } = require("@strapi/strapi").factories;
 module.exports = createCoreController("api::order.order", ({ strapi }) => ({
   async create(ctx) {
     const { products, userName, email } = ctx.request.body;
-    console.log(ctx.request.body, 'ctx.request.body')
     try {
       // retrieve item information
       const lineItems = await Promise.all(
@@ -37,8 +36,8 @@ module.exports = createCoreController("api::order.order", ({ strapi }) => ({
         payment_method_types: ["card"],
         customer_email: email,
         mode: "payment",
-        success_url: "http://localhost:3000/checkout/success",
-        cancel_url: "http://localhost:3000/checkout/cancel",
+        success_url: "https://www.jryanstudios.com/checkout/success",
+        cancel_url: "https://www.jryanstudios.com/checkout/cancel",
         line_items: lineItems,
         shipping_address_collection: { allowed_countries: ["US", "CA"] },
         shipping_options: [
