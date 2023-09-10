@@ -123,12 +123,10 @@ function ItemDetails() {
                   id="color"
                   label="Color"
                   defaultValue={item?.attributes?.colorChoices[0]}
-                  onChange={(e) => {
+                  onChange={(e) => { 
+                    const setImg = item?.attributes?.thumbnails.data.find((item) => item?.attributes?.alternativeText.includes(e.target.value));
+                    setMainImgUrl(setImg?.attributes?.url);
                     setItem({...item, attributes: {...item.attributes, color: e.target.value}});
-                    // const imgUrl = item?.attributes?.thumbnails.data.find((thumbnail) => thumbnail.attributes.name.includes(e.target.value))
-                    // setMainImgUrl(imgUrl?.attributes?.url);
-                    // console.log(item, 'item')
-                    // console.log(imgUrl, 'imgUrl')
                   }}
                   >
                     {item.attributes.colorChoices.map((color) => (
